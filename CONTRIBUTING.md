@@ -10,7 +10,7 @@ get going:
 
 1. Fork the centaurus-cloud/website repo:
 
-   - Go to the [website repo][https://github.com/centaurus-cloud/website] on GitHub.
+   - Go to the [project repo](https://github.com/centaurus-cloud/website) on GitHub.
    - Click **Fork** to make your own copy of the repo. GitHub creates a copy
      at `https://github.com/<your-github-username>/website`.
 
