@@ -10,65 +10,65 @@ get going:
 
 1. Fork the centaurus-cloud/website repo:
 
-    * Go to the [centaurus-cloud/website repo][centaurus-cloud-website-repo] on GitHub.
-    * Click **Fork** to make your own copy of the repo. GitHub creates a copy
-      at `https://github.com/<your-github-username>/website`.
+   - Go to the [website repo][https://github.com/centaurus-cloud/website] on GitHub.
+   - Click **Fork** to make your own copy of the repo. GitHub creates a copy
+     at `https://github.com/<your-github-username>/website`.
 
-1. Open a command window on your local machine.
+2. Open a command window on your local machine.
 
-1. Clone your forked repo, to copy the files down to your local machine.
-  This example creates a directory called `centaurus-cloud` and uses SSH cloning to
-  download the files:
+3. Clone your forked repo, to copy the files down to your local machine.
+   This example creates a directory called `centaurus-cloud` and uses SSH cloning to
+   download the files:
 
-    ```
-    mkdir centaurus-cloud
-    cd centaurus-cloud/
-    git clone git@github.com:<your-github-username>/website.git
-    cd website/
-    ```
+   ```
+   mkdir centaurus-cloud
+   cd centaurus-cloud/
+   git clone git@github.com:<your-github-username>/website.git
+   cd website/
+   ```
 
-1. Add the upstream repo as a git remote repo:
+4. Add the upstream repo as a git remote repo:
 
-    ```
-    git remote add upstream https://github.com/centaurus-cloud/website.git
-    git remote set-url --push upstream no_push
-    ```
+   ```
+   git remote add upstream https://github.com/centaurus-cloud/website.git
+   git remote set-url --push upstream no_push
+   ```
 
-1. Check your remotes:
+5. Check your remotes:
 
-    ```
-    git remote -v
-    ```
+   ```
+   git remote -v
+   ```
 
-    You should have 2 remote repos:
+   You should have 2 remote repos:
 
-      -  `origin` - points to your own fork of the repo on gitHub -
-         that is, the one you cloned my local repo from.
-      -  `upstream` - points to the actual repo on gitHub.
+   - `origin` - points to your own fork of the repo on gitHub -
+     that is, the one you cloned my local repo from.
+   - `upstream` - points to the actual repo on gitHub.
 
-1. Create a branch. In this example, replace `doc-updates` with any branch name
-  you like. Choose a branch name that helps you recognise the updates you plan
-  to make in that branch:
+6. Create a branch. In this example, replace `doc-updates` with any branch name
+   you like. Choose a branch name that helps you recognise the updates you plan
+   to make in that branch:
 
-    ```
-    git checkout -b doc-updates
-    ```
+   ```
+   git checkout -b doc-updates
+   ```
 
-1. Ensure you are in your target branch.
+7. Ensure you are in your target branch.
 
-    ```
-    git branch
-    ```
+   ```
+   git branch
+   ```
 
-    The branch mark with `*` is your branch now.
+   The branch mark with `*` is your branch now.
 
-1. Add and edit the files as you like. The doc pages are in the
-  `/website/content/docs/` directory.
+8. Add and edit the files as you like. The doc pages are in the
+   `//content/` directory.
 
-1. Run `git status` at any time, to check the status of your local files.
-  Git tells you which files need adding or committing to your local repo.
+9. Run `git status` at any time, to check the status of your local files.
+   Git tells you which files need adding or committing to your local repo.
 
-1. Commit your updated files to your local git repo. Example commit:
+10. Commit your updated files to your local git repo. Example commit:
 
     ```
     git commit -a -m "Fixed some doc errors."
@@ -81,25 +81,25 @@ get going:
     git commit -a -m "Added a shiny new doc."
     ```
 
-1. Push from your branch (for example, `doc-updates`) to **the relevant branch
-  on your fork on GitHub:**
+11. Push from your branch (for example, `doc-updates`) to **the relevant branch
+    on your fork on GitHub:**
 
     ```
     git checkout doc-updates
     git push origin doc-updates
     ```
 
-1. When you're ready to start the review process, create a pull request (PR)
-  **in the branch** on **your fork** on the GitHub UI, based on the above push.
-  The PR is auto-sent to the upstream repo - that is, the one you forked from.
+12. When you're ready to start the review process, create a pull request (PR)
+    **in the branch** on **your fork** on the GitHub UI, based on the above push.
+    The PR is auto-sent to the upstream repo - that is, the one you forked from.
 
-1. If you need to make changes to the files in your PR, continue making them
-  locally in the same branch, then push them again in the same way. GitHub
-  automatically sends them through to the same PR on the upstream repo!
+13. If you need to make changes to the files in your PR, continue making them
+    locally in the same branch, then push them again in the same way. GitHub
+    automatically sends them through to the same PR on the upstream repo!
 
-1. **Hint:** If you're authenticating to GitHub via SSH, use `ssh-add` to add
-  your SSH key passphrase to the managing agent, so that you don't have to
-  keep authenticating to GitHub. You need to do this again after every reboot.
+14. **Hint:** If you're authenticating to GitHub via SSH, use `ssh-add` to add
+    your SSH key passphrase to the managing agent, so that you don't have to
+    keep authenticating to GitHub. You need to do this again after every reboot.
 
 Please remember read and observe the [Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md). and
 the [Contributor Guide](https://centaurus-cloud.netlify.com/docs/about/contributing/) on website

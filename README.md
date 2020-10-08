@@ -1,121 +1,83 @@
-# Creating and updating the Centaurus-Cloud docs
+# centauruscloud.io
 
-Welcome to the GitHub repository for Centaurus-Cloud's public website. The docs are
-hosted at https://centaurus-cloud.io.
+Welcome to the GitHub repository for Centaurus' public website https://www.centauruscloud.io. This website is a general purpose project landing page and it also servers as a blog/resources hub for all project related information.
 
-We use [Hugo](https://gohugo.io/) to format and generate our website, and
-[Netlify](https://www.netlify.com/) to manage the deployment of the site. Hugo
-is an open-source static site generator that provides us with templates, content
-organisation in a standard directory structure, and a website generation engine.
-You write the pages in Markdown, and Hugo wraps them up into a website.
+# About
 
-* Please see [How to contributing](CONTRIBUTING.md) for instructions on how to contribute, if you are not familiar with the
-  GitHub workflow
-* [Start contributing](https://centaurus-cloud.netlify.com/docs/about/contributing/)
+This project is powered by [Gatsby](https://www.gatsbyjs.com/), a React-based static website generator. This allows us to generate new content such as a blog post or resource page simply by adding markdown files to the project. The Gatsby engine will automatically generated desired pages leaving no need to touch any codebase.
+
+## Update Docs
+
+To update docs, you need update markdowns in the `/content` folder. Markdowns are organized into blog and resource.
+
+The general procecure is:
+
+1. Fork the project and create a new branch. ([Contribution Guide](CONTRIBUTING.md))
+2. Make your changes and push to remote.
+3. Start a pull request.
+4. Wait for the automated PR workflow to do some check, when it's ready, you should see a comment like this: `deploy/netlify — Deploy preview ready!`.
+5. Preview your changes.
+6. Continue updating your doc until you're happy with it.
+7. When you're ready, add a comment to the PR and assign a reviewer/approver.
+8. When updates are merged into the master branch, they will be automatically deployed and ready in a few minutes.
+
+### Markdown format
+
+In order for your doc to be generated and displayed correctly, it is very important to add the correct frontmatter to your markdown. Frontmatter is just formatted text that's added in the beginning of a markdown, it usually includes title, date etc.
+
+For example:
+
+```
+---
+title: "An Overview of Project Arktos"
+date: "2020-08-04"
+category: "presentations"
+---
+```
+
+**Notice double quotes are reqruied**.
+
+Below is a list of supported frontmatter keywords:
+
+| Keyword   | Behavior              | Required          | Notes                    |
+| --------- | --------------------- | ----------------- | ------------------------ |
+| title     | Add doc title         | ✅                |                          |
+| date      | Add doc date          | ✅                | Format "YYYY-MM-DD"      |
+| author    | Add doc author        |                   |                          |
+| thumbnail | Add doc thumbnail     |                   |                          |
+| category  | Add resource category | ✅(Resource only) |                          |
+| url       | Add doc redirect URL  |                   | Redirect to desired url. |
+
+If you have questions, please refer to some of the existed docs.
 
 ## Quickstart
 
-Here's a quick guide to updating the docs. It assumes you're familiar with the
-GitHub workflow and you're happy to use the automated preview of your doc
-updates:
+For local development:
 
-1. Fork the [centaurus-cloud/website repo][centaurus-cloud-website-repo] on GitHub.
-1. Make your changes and send a pull request (PR).
-1. If you're not yet ready for a review, add a comment to the PR saying it's a
-  work in progress or add `[WIP]` in your PRs title. You can also add `/hold` in a comment to mark the PR as not
-  ready for merge. (**Don't** add the Hugo declarative "draft = true" to the
-  page front matter, because that will prevent the auto-deployment of the
-  content preview described in the next point.)
-1. Wait for the automated PR workflow to do some checks. When it's ready,
-  you should see a comment like this: **deploy/netlify — Deploy preview ready!**
-1. Click **Details** to the right of "Deploy preview ready" to see a preview
-  of your updates.
-1. Continue updating your doc until you're happy with it.
-1. When you're ready for a review, add a comment to the PR and assign a
-  reviewer/approver. See the
-  [centaurus-cloud contributor guide][centaurus-cloud-contributor-guide].
-
-## Previewing your changes on a local website server
-
-If you'd like to preview your doc updates as you work, you can install Hugo
-and run a local server. This section shows you how.
-
-### Install Hugo
-
-See the [Hugo installation guide][hugo-install]. Here are some examples:
-
-#### Mac OS X:
+1. Install the Gatsby CLI
 
 ```
-brew install hugo
+npm install -g gatsby-cli
 ```
 
-#### Debian:
+2. Clone the project
 
-1. Download the latest Debian package from the [Hugo website][hugo-install].
-  For example, `hugo_0.54_Linux-64bit.deb`.
-1. Install the package using `dpkg`:
+```
+git clone forked-url.git
+```
 
-    ```
-    sudo dpkg -i hugo_0.46_Linux-64bit.deb
-    ```
+3. Install dependencies
 
-1. Verify your installation:
+```
+npm install
+```
 
-    ```
-    hugo version
-    ```
+4. Start development server
 
-### Run a local website server
+```
+gatsby develop
+```
 
-Follow the usual GitHub workflow to fork the repo on GitHub and clone it to your
-local machine, then use your local repo as input to your Hugo web server:
+## Contribute
 
-1. Ensure you are in your target branch:
-
-    ```
-    git branch
-    ```
-
-1. Start your website server. Make sure you run this command from the
-   `/website/` directory, so that Hugo can find the config files it needs:
-
-    ```
-    hugo server -D
-    ```
-
-1. Your website is at [http://localhost:1313/](http://localhost:1313/).
-
-1. Continue with the usual GitHub workflow to edit files, commit them, push the
-  changes up to your fork, and create a pull request. (See the GitHub workflow
-
-1. While making the changes, you can preview them on your local version of the
-  website at [http://localhost:1313/](http://localhost:1313/). Note that if you
-  have more than one local git branch, when you switch between git branches the
-  local website reflects the files in the current branch.
-
-Useful Hugo docs:
-- [Hugo installation guide][hugo-install]
-- [Hugo basic usage](https://gohugo.io/getting-started/usage/)
-- [Hugo site directory structure](https://gohugo.io/getting-started/directory-structure/)
-- [hugo server reference](https://gohugo.io/commands/hugo_server/)
-- [hugo new reference](https://gohugo.io/commands/hugo_new/)
-
-## Versioning
-
-For each stable release, we should create a new branch for the relevant documentation. For
-example, the documentation for the v0.1 stable release are maintained in the
-[v0.1-branch](https://github.com/centaurus-cloud/website/tree/v0.1-branch).
-Each branch has a corresponding netlify website that automatically syncs each merged PR.
-
-Going forward, the versioned sites should follow this convention:
-* `https://centaurus-cloud.netlify.com/` always points to the current *master branch*
-* `https://master.centaurus-cloud.netlify.com/` always points to Github head
-* `https://vXXX-YYY.centaurus-cloud.netlify.com/` points to the release at vXXX.YYY-branch
-
-[hugo-install]: https://gohugo.io/getting-started/installing/
-[hugo-shortcode-templates]: https://gohugo.io/templates/shortcode-templates/
-[hugo-shortcodes]: https://gohugo.io/content-management/shortcodes/
-
-[centaurus-cloud-contributor-guide]: CONTRIBUTING.md
-[centaurus-cloud-website-repo]: https://github.com/centaurus-cloud/website
+If you are not familiar with Github workflow, please read [Contributing Guide](CONTRIBUTING.md) for instructions on how to contribute.
