@@ -11,6 +11,7 @@ import gridgain from "../images/gridgain-logo.svg";
 import tuwien from "../images/tu-wien-logo.png";
 import soda from "../images/soda-logo.png";
 import c2c from "../images/c2c-logo.jpg";
+import reinvent from "../images/reinvent-logo.png";
 
 import "sal.js/dist/sal.css";
 
@@ -320,25 +321,30 @@ const Index = () => {
             <div className="partners-container pure-u-1 pure-u-md-1-3">
               <img
                 className="partners__image"
-                src={soda}
-                alt="Soda Foundation logo"
+                src={reinvent}
+                alt="Reinvent logo"
               />
             </div>
-
-            <div className="partners-container pure-u-1 pure-u-md-1-3">
-              <img
-                className="partners__image"
-                src={c2c}
-                alt="Click2Cloud logo"
-              />
-            </div>
-
             <div className="partners-container pure-u-1 pure-u-md-2-3">
               <img
                 style={{ width: "70%" }}
                 className="partners__image"
                 src={tuwien}
                 alt="Tuwien logo"
+              />
+            </div>
+            <div className="partners-container pure-u-1 pure-u-md-1-3">
+              <img
+                className="partners__image"
+                src={soda}
+                alt="Soda Foundation logo"
+              />
+            </div>
+            <div className="partners-container pure-u-1 pure-u-md-1-3">
+              <img
+                className="partners__image"
+                src={c2c}
+                alt="Click2Cloud logo"
               />
             </div>
           </div>
