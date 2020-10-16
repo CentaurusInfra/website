@@ -4,21 +4,22 @@ import { Helmet } from "react-helmet";
 import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import useDropdown from "../hooks/useDropdown";
-
-import { capitalize } from "../utils";
+import FAQ from "../components/FAQ";
 import config from "../../data/SiteConfig";
 
 // Modify this to add/remove categories
 const RESOURCES_CATEGORIES = [
-  "whitepaper",
-  "presentations",
-  "talks & videos",
-  "events",
+  "Whitepaper",
+  "Presentations",
+  "Talks & Videos",
+  "Events",
+  "FAQs",
 ];
 
 const Resources = ({ data }) => {
   const { toggle, collapsing, toggleMenuRef, handleToggle } = useDropdown();
-  const [category, setCategory] = useState(RESOURCES_CATEGORIES[0]);
+  const [category, setCategory] = useState(0);
+  const selectedCategory = RESOURCES_CATEGORIES[category];
 
   const postEdges = data.allMarkdownRemark.edges;
   const postEdgesByCategory = {};
@@ -28,21 +29,17 @@ const Resources = ({ data }) => {
     postEdgesByCategory[key].push(postEdge);
   });
 
-  const categories = [
-    ...new Set([...RESOURCES_CATEGORIES, ...Object.keys(postEdgesByCategory)]),
-  ];
-
-  const renderMenuLink = (name) => {
-    const formattedCategory = capitalize(name);
+  const renderMenuLink = (index) => {
+    const name = RESOURCES_CATEGORIES[index];
     const handleMenuClick = () => {
+      setCategory(index);
       if (window.innerWidth < 767) handleToggle(toggle);
-      setCategory(name);
     };
 
     return (
       <li className="dropdown-item" onClick={handleMenuClick} key={name}>
-        <div className={`menu-link ${category === name ? "active" : ""}`}>
-          {formattedCategory}
+        <div className={`menu-link ${category === index ? "active" : ""}`}>
+          {name}
         </div>
       </li>
     );
@@ -62,7 +59,7 @@ const Resources = ({ data }) => {
             className="dropdown-item dropdown-toggle"
             onClick={() => handleToggle(toggle)}
           >
-            {capitalize(category)}
+            {selectedCategory}
           </div>
           <ul
             className={`dropdown ${toggle ? "show" : ""} ${
@@ -70,12 +67,20 @@ const Resources = ({ data }) => {
             }`}
             ref={toggleMenuRef}
           >
-            {categories.map((category) => renderMenuLink(category))}
+            {RESOURCES_CATEGORIES.map((_, index) => renderMenuLink(index))}
           </ul>
         </div>
 
         <div className="resources-posts">
-          <PostListing postEdges={postEdgesByCategory[category] || []} />
+          {selectedCategory.toLowerCase() === "faqs" ? (
+            <FAQ />
+          ) : (
+            <PostListing
+              postEdges={
+                postEdgesByCategory[selectedCategory.toLowerCase()] || []
+              }
+            />
+          )}
         </div>
       </div>
     </Layout>

@@ -26,7 +26,7 @@ const useDropdown = () => {
       handleToggle(true);
     };
 
-    if (toggle) {
+    if (toggleMenuRef.current && toggle) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
