@@ -13,7 +13,7 @@ const RESOURCES_CATEGORIES = [
   "Presentations",
   "Talks & Videos",
   "Events",
-  "FAQs",
+//   "FAQs",
 ];
 
 const Resources = ({ data }) => {
