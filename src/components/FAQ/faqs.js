@@ -2,7 +2,7 @@ const FAQ_LIST = [
   {
     question: "What is Project Centaurus?",
     answer: `
-    Centaurus is an open source Distributed Cloud Native Infrastructure+ umbrella
+    Centaurus is an open source Distributed Cloud Native Infrastructure umbrella
     project for the 5G, AI, and Edge era. Project Centaurus is an overarching next 
     generation open source cloud platform that encompasses open source projects 
     <a target="__blank" href="https://github.com/centaurus-cloud/arktos">Arktos</a> & 
