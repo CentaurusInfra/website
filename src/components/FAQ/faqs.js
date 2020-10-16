@@ -2,16 +2,16 @@ const FAQ_LIST = [
   {
     question: "What is Project Centaurus?",
     answer: `
-    Centaurus is an open source Distributed Cloud Native Infrastructure+ umbrella
+    Centaurus is an open source Distributed Cloud Native Infrastructure umbrella
     project for the 5G, AI, and Edge era. Project Centaurus is an overarching next 
     generation open source cloud platform that encompasses open source projects 
     <a target="__blank" href="https://github.com/centaurus-cloud/arktos">Arktos</a> & 
     <a target="__blank" href="https://github.com/centaurus-cloud/mizar">Mizar</a> as 
-    sub-projects underneath it as one fully integrated cloud platform. Centaurus project 
+    sub-projects underneath it as one fully integrated cloud platform.<br> Centaurus project 
     enables a unified and large-scale distributed cloud infrastructure platform. It is a 
     software layer that abstracts out the underlying hardware infrastructure, making it 
     possible to consistently run and manage applications running in the cloud environment 
-    in a seamless manner. Centaurus project currently includes a Compute project 
+    in a seamless manner.<br> Centaurus project currently includes a Compute project 
     (<a target="__blank" href="https://github.com/centaurus-cloud/arktos">Arktos</a>) and 
     a Networking project (<a target="__blank" href="https://github.com/centaurus-cloud/mizar">Mizar</a>). 
     Storage, identity, management, monitoring, security, tools, edge connectivity, and other parts of the 
@@ -44,6 +44,7 @@ const FAQ_LIST = [
         edge sites from the cloud.
       </li>
     </ul>
+    <br>
     Please see more details in the <a target="__blank" href="https://www.centauruscloud.io/files/Centaurus%20WhitePaper.pdf">white paper</a> 
     on the Centaurus project <a target="__blank" href="https://www.centauruscloud.io">website</a>.`,
   },
@@ -53,15 +54,15 @@ const FAQ_LIST = [
     Kubernetes is a platform for deploying and managing containers. While Kubernetes offers some 
     base functionality on which users can rely upon when running their containerized applications 
     or building their extensions, it does not provide inherent support for the entire cloud platform 
-    functionality. Kubernetes does not purport to solve every problem that users may have as part of 
+    functionality.<br> Kubernetes does not purport to solve every problem that users may have as part of 
     their overall cloud environment. For example, Kubernetes relies on the underlying cloud infrastructure 
     layers such as IaaS Provisioning & Management (using a clean “cloud provider” interface), Networking 
     (using pluggable CNI interface) etc. etc. Kubernetes typically relies on IaaS Provisioning & Management 
-    provided by public cloud provides (AWS, Azure, Google etc.) or using open source OpenStack environment.
+    provided by public cloud provides (AWS, Azure, Google etc.) or using open source OpenStack environment.<br>
     Centaurus cloud platform, on the other hand, is a comprehensive large-scale cloud platform that not only 
     provides support for deploying and managing containerized workloads but also includes inherent comprehensive 
     IaaS Provisioning & Management capabilities in a unified manner. That way, Centaurus platform is self-contained 
-    and does not rely on 3rd party IaaS layer underneath it. Although, it is important to highlight that Centaurus 
+    and does not rely on 3rd party IaaS layer underneath it.<br> Although, it is important to highlight that Centaurus 
     projects is highly inspired by the cloud native design principles of Kubernetes project. As a matter of fact, 
     Centaurus is built upon baseline Kubernetes codebase and enhances the underlying Kubernetes core components for 
     enabling a highly scalable & unified cloud computing platform experience.`,
@@ -72,15 +73,15 @@ const FAQ_LIST = [
     As mentioned previously that Centaurus cloud platform is a comprehensive cloud platform that not only provides 
     support for deploying and managing containerized workloads but also includes inherent comprehensive IaaS Provisioning 
     & Management capabilities. From that perspective, Centaurus is somewhat similar to what OpenStack is and provides an 
-    option or an alternative to it. However, it is utmost important to highlight that unlike traditional OpenStack like 
+    option or an alternative to it.<br> However, it is utmost important to highlight that unlike traditional OpenStack like 
     cloud infrastructure platforms, Centaurus is a large-scale distributed cloud infrastructure IaaS+ platform that 
     provides inherent support for next generation distributed applications (such as robotic control or autonomous driving 
     etc., which require actions to be taken quickly in response to a constantly changing environment). It has a built-in 
-    global scheduling capability that supports seamless scheduling of workloads amongst cloud data centers and edge cloud sites.
+    global scheduling capability that supports seamless scheduling of workloads amongst cloud data centers and edge cloud sites.<br>
     Additionally, it important to highlight that Centaurus employs cloud native approach along with a novel cloud networking 
     solution to provide the comprehensive cloud platform functionality. Centaurus addresses some key challenges many open 
     source cloud infrastructure face, including scale to manage an cluster of 50K+ nodes, unified infrastructure and API for 
-    VM, containers and other types of resources, and scalability of cloud network etc. OpenStack does provide extensive support 
+    VM, containers and other types of resources, and scalability of cloud network etc.<br> OpenStack does provide extensive support 
     for rich cloud Storage as well as other supporting cloud services such as Identity Management etc. As mentioned earlier 
     that we'd like to invite the open source community to join us to enhance & complete the Centaurus ecosystem by building 
     such supporting cloud services.
@@ -103,9 +104,9 @@ const FAQ_LIST = [
     as it is geared towards solving different sets of challenges or problems than other cloud computing projects 
     in LF. With that being said, we are still looking at potential options and trying to find the best place to 
     donate and host the Centaurus project, which can deliver maximum benefits for the open source communities and 
-    the industry. Technically, as you may see, Centaurus has compute, network, and edge components and focuses on 
+    the industry.<br> Technically, as you may see, Centaurus has compute, network, and edge components and focuses on 
     a complete IaaS+ platform. In contrast, CNCF focuses on container orchestration, LF Edge focuses on Edge 
-    infrastructure, CDF focuses on the CI/CD layer and LF networking specifically on network architecture and solution.
+    infrastructure, CDF focuses on the CI/CD layer and LF networking specifically on network architecture and solution.<br>
     However, Centaurus is designed with cloud-native architecture, and its components are independent projects that can 
     be used independently with other cloud technologies. Vice versa, we welcome and expect that components from projects 
     in CNCF, LF Edge, and LF Networking and other open source foundations can be plugged into Centaurus as well.
@@ -148,19 +149,23 @@ const FAQ_LIST = [
       <li>
         In order to realize better overall performance, we chose to re-architect the underlying core components (such as Kubelet etc.) as opposed to a bolt-on proxy approach.
       </li>
+      <br>
     Please see more details on <a target="__blank" href="https://github.com/centaurus-cloud/arktos">Arktos</a> github repository.
     `,
   },
   {
     question:
       "How does Centaurus project release stays in sync. with Kubernetes?",
-    answer: `As mentioned earlier that Centaurus projects is highly inspired by the cloud native design principles of Kubernetes project. It is built upon baseline Kubernetes codebase and enhances the underlying Kubernetes core components for enabling a highly scalable & unified cloud computing platform. Centaurus project is forked from Kubernetes release 1.15 with extensive core components changes thereafter.
+    answer: `
+    As mentioned earlier that Centaurus projects is highly inspired by the cloud native design principles of Kubernetes project. It is built upon baseline Kubernetes codebase and enhances the underlying Kubernetes core components for enabling a highly scalable & unified cloud computing platform. Centaurus project is forked from Kubernetes release 1.15 with extensive core components changes thereafter.
+    <br>
     As the Centaurus codebase has diverged extensively from baseline Kubernetes, we are longer planning to stay in sync. with the community Kubernetes version. Going forward, if there are any key changes which may benefit Centaurus project, we may cherry-pick those changes into Centaurus/Arktos codebase.`,
   },
   {
     question: "Is Centaurus project a distro of Kubernetes?",
     answer: `
     No, as mentioned previously that Centaurus project is forked from Kubernetes release 1.15 with extensive core components changes thereafter.
+    <br>
     As the Centaurus codebase has diverged extensively from baseline Kubernetes, we are longer planning to stay in sync. with the community Kubernetes version.
     `,
   },
@@ -182,6 +187,7 @@ const FAQ_LIST = [
       <li>Compatibility: tenants can still use existing APIs and tools.</li>
       <li>Manageability: cluster admins can perform cross-tenant management tasks.</li>
     </ul>
+    <br>
     Currently, there are various multi-tenancy approaches being discussed within the Kubernetes multi-tenancy SIG group. None of these approaches are similar to our hard multi-tenancy approach. There have been few ongoing discussions with the SIG members for exploring possible upstreaming of our multi-tenancy implementation in the community version of Kubernetes.
     `,
   },
@@ -201,9 +207,12 @@ const FAQ_LIST = [
       <li>Unifies the network data-plane for containers, serverless functions, virtual machines, etc.</li>
       <li>Creates an extensible cloud-network of pluggable network functions.</li>
     </ul>
+    <br>
     Mizar's data-plane is built from ground-up on top of XDP. Mizar's main building block is an XDP program that runs on each host. The XDP program implements virtual functions including overlay switching, routing, virtual endpoints, load-balancing, NAT, etc. By running multiple instances of XDP programs per tenant network (VPC or Subnet), Mizar data plane provides high performance and extensible packet processing pipeline and functions that achieve Mizar's functional, scale, and performance goals.
+    <br>
     Mizar's management-plane programs the data-plane by translating typical networking related APIs and resources to Mizar specific configuration. The
     programmability of the data-plane involves loading and unloading network functions at various stages of the packet processing pipeline.
+    <br>
     Please see more details on <a target="__blank" href="https://github.com/centaurus-cloud/mizar">Mizar</a> github repository.
     `,
   },
@@ -211,9 +220,13 @@ const FAQ_LIST = [
     question: "Why build a yet another cloud networking platform?",
     answer: `
     Traditional network virtualization technologies (OVS/Neutron etc.) enable virtual cloud networking by mimicking the age old traditional networking design constructs such as MAC address learning, reliance on flooding etc. Virtual Switches are essentially softwareization of hardware switches and routers, but not necessarily programmable in order to provide support for rapid network changes. Additionally, packets in a traditional networking environment (such as OVS) have to typically traverse multiple network stacks on the same host. <br>
+    <br>
     Current cloud networking solutions (such as OpenVSwitch-OVS ) program every host every time a user provision an endpoint. Such a networking architecture is highly constrained and not scalable and non-conducive to coping up with the contemporary extremely large scale dynamic workloads (to the order of billions of network packets a day). Such an environment was fine previously when the workloads were quite static and not in large numbers (typical Virtual Machine based static cloud environment).
+    <br>
     With all of this as a background, current cloud networking technology solutions are not designed for unified networking for containers, serverless functions, virtual machines, etc. These solutions do not meet the scaling goals of highly scalable public cloud like environment. <br>
+    <br>
     To address all these challenges, we built Mizar networking from ground up for efficiently routing traffic for virtual networks and provide support for rapid provisioning of new endpoints. Mizar is built as a fault tolerant distributed system for enabling virtual cloud networking functionality as well as building add-on stateful network services on top of it. Mizar also enables a flexible declarative environment for chaining various add-on network services in accordance to the business workflow requirements.
+    <br>
     As part of the VPC traffic routing process, at the heart of Mizar is a core distributed state management layer that handles mappings for forwarding tenant specific network packets to the destination IP and physical destination host address. Mizar manages enormous stateful connection loads, at scale, with high availability. This functionality is currently being built out.
     `,
   },
@@ -221,6 +234,7 @@ const FAQ_LIST = [
     question: "Is Mizar Networking same as OpenStack Neutron?",
     answer: `
     Neutron is an OpenStack project to provide "networking as a service" between interface devices (e.g., vNICs) managed by other Openstack services (e.g., nova). It is essentially a network control plane functionality that programs the underlying OVS data plane in order to enable cloud network virtualization environment. <br>
+    <br>
     As an apple-to-apple comparison, Neutron is very similar to Mizar's management-plane functionality described earlier.
     `,
   },
@@ -266,8 +280,11 @@ const FAQ_LIST = [
     question: "How is Mizar Networking different than User-Space DPDK?",
     answer: `
     In the networking world a “Forwarding plane” is the underlying technology that processes the networking Packets. There are various flavors of forwarding planes such as DPDK, XDP, OVS, FPGA, ASIC etc.<br>
+    <br>
     DPDK stands for Data Plane Development Kit. By default Linux uses kernel networking stack to process packets, this puts pressure on kernel to process packets faster as the NICs (Network Interface Card) speeds are increasing faster and faster. There have been many techniques to bypass kernel to achieve packet efficiency. This involves processing packets in the userspace instead of kernel space. DPDK is one such technology.<br>
+    <br>
     Unlike DPDK based solutions, Mizar packet processing is entirely in-kernel without giving up the network interface control to the DPDK library. Mizar makes the best use of kernel packet processing constructs without being locked-in to a specific processor architecture. As mentioned earlier that Mizar data plane is built on top of XDP forwarding plane technology-set. This is an architectural choice given a longer term value of having Mizar’s networking layer as close to the hardware as possible and not as a user-space application.<br>
+    <br>
     There is a good talk by David Millar on XDP few years ago (“XDP is not DPDK” and “DPDK is not Linux” - https://youtu.be/NlMQ0i09HMU?t=539). Gist of the talk is the following:
     <ul>
       <li>DPDK is not Linux, it entirely bypasses Linux stack instead of working in concert with it. Once you use DPDK, none of the Linux networking stack capabilities are available to you at all.</li>
@@ -287,6 +304,7 @@ const FAQ_LIST = [
     question: "How does Mizar Networking related to SR-IOV?",
     answer: `
     Like DPDK, SR-IOV is yet another technology for optimizing networking packet processing. SR-IOV stands for “Single Root I/O Virtualization”. This takes the performance of the compute hardware to the next level by avoiding hypervisor (unlike OVS) altogether and have VNF (user space applications) access NIC directly, thus enabling almost line rate throughput.<br>
+    <br>
     SR-IOV capability which makes one physical device appear as multiple virtual devices can potentially co-exist with XDP. Please see relevant link https://github.com/xdp-project/net-next/blob/master/Documentation/PCI/pci-iov-howto.rst for ongoing work to this regards.
     `,
   },
