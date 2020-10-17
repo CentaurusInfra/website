@@ -15,7 +15,7 @@ const FAQ_LIST = [
     (<a target="__blank" href="https://github.com/centaurus-cloud/arktos">Arktos</a>) and 
     a Networking project (<a target="__blank" href="https://github.com/centaurus-cloud/mizar">Mizar</a>). 
     Storage, identity, management, monitoring, security, tools, edge connectivity, and other parts of the 
-    Centaurus vision still needs to be built out, and we'd like to invite the open source community to join 
+    Centaurus vision still need to be built out, and we'd like to invite the open source community to join 
     us to complete the Centaurus ecosystem.`,
   },
   {
@@ -36,7 +36,7 @@ const FAQ_LIST = [
         and routing in the cloud.
       </li>
       <li>
-        Hyper-scale compute cluster management supports 50K+ compute nodes in a single cluster and 10M+ 
+        Hyper-scale compute cluster management supports 300K+ hosts in a single regional control plane and 10M+ 
         network endpoint provisioning in a region.
       </li>
       <li>
@@ -64,8 +64,10 @@ const FAQ_LIST = [
     IaaS Provisioning & Management capabilities in a unified manner. That way, Centaurus platform is self-contained 
     and does not rely on 3rd party IaaS layer underneath it.<br> Although, it is important to highlight that Centaurus 
     projects is highly inspired by the cloud native design principles of Kubernetes project. As a matter of fact, 
-    Centaurus is built upon baseline Kubernetes codebase and enhances the underlying Kubernetes core components for 
-    enabling a highly scalable & unified cloud computing platform experience.`,
+    Centaurus/Arktos compute layer project is specifically built upon baseline Kubernetes codebase and enhances the
+    underlying Kubernetes core components for enabling a highly scalable & unified cloud computing platform experience. 
+    Centaurus/Mizar networking project, on the other hand,  is built from ground-up using XDP eXpress Data Path (XDP) and
+    Geneve protocol technology-set and has no relationship to Kubernetes project whatsoever.`,
   },
   {
     question: "How is Centaurus different from OpenStack?",
@@ -76,15 +78,16 @@ const FAQ_LIST = [
     option or an alternative to it.<br> However, it is utmost important to highlight that unlike traditional OpenStack like 
     cloud infrastructure platforms, Centaurus is a large-scale distributed cloud infrastructure IaaS+ platform that 
     provides inherent support for next generation distributed applications (such as robotic control or autonomous driving 
-    etc., which require actions to be taken quickly in response to a constantly changing environment). It has a built-in 
-    global scheduling capability that supports seamless scheduling of workloads amongst cloud data centers and edge cloud sites.<br>
+    etc., which require actions to be taken quickly in response to a constantly changing environment, highly low latency 
+    applications environment). It has a built-in global scheduling capability that supports seamless scheduling of workloads 
+    amongst cloud data centers and edge cloud sites.<br>
     Additionally, it important to highlight that Centaurus employs cloud native approach along with a novel cloud networking 
     solution to provide the comprehensive cloud platform functionality. Centaurus addresses some key challenges many open 
-    source cloud infrastructure face, including scale to manage an cluster of 50K+ nodes, unified infrastructure and API for 
+    source cloud infrastructure face, cloud scalability at the region level, unified infrastructure and API for 
     VM, containers and other types of resources, and scalability of cloud network etc.<br> OpenStack does provide extensive support 
     for rich cloud Storage as well as other supporting cloud services such as Identity Management etc. As mentioned earlier 
     that we'd like to invite the open source community to join us to enhance & complete the Centaurus ecosystem by building 
-    such supporting cloud services.
+    such supporting cloud services provided by either OpenStack or similar services provided by public cloud providers such as AWS, Azure, Google etc.
     `,
   },
   {
@@ -155,11 +158,11 @@ const FAQ_LIST = [
   },
   {
     question:
-      "How does Centaurus project release stays in sync. with Kubernetes?",
+      "How does Centaurus project release stays in sync with Kubernetes?",
     answer: `
     As mentioned earlier that Centaurus projects is highly inspired by the cloud native design principles of Kubernetes project. It is built upon baseline Kubernetes codebase and enhances the underlying Kubernetes core components for enabling a highly scalable & unified cloud computing platform. Centaurus project is forked from Kubernetes release 1.15 with extensive core components changes thereafter.
     <br>
-    As the Centaurus codebase has diverged extensively from baseline Kubernetes, we are longer planning to stay in sync. with the community Kubernetes version. Going forward, if there are any key changes which may benefit Centaurus project, we may cherry-pick those changes into Centaurus/Arktos codebase.`,
+    As the Centaurus codebase has diverged extensively from baseline Kubernetes, we are no longer planning to stay in sync. with the community Kubernetes version. Going forward, if there are any key changes which may benefit Centaurus project, we may cherry-pick those changes into Centaurus/Arktos codebase.`,
   },
   {
     question: "Is Centaurus project a distro of Kubernetes?",
@@ -199,7 +202,7 @@ const FAQ_LIST = [
   {
     question: "What is Mizar Networking?",
     answer: `
-    Mizar is an open-source high-performance cloud-network powered by eXpress Data Path (XDP) and Geneve protocol for highly scalable cloud environment. Mizar is a software defined virtual cloud networking that uses encapsulation technique to securely isolate tenants using a built-in multitenant environment. It is controlled programmatically using a set of well defined API set. It is a simple and efficient solution that lets you create a multi-tenant overlay network of a massive number of endpoints with extensible network functions:
+    Mizar is an open-source high-performance cloud-network powered by eXpress Data Path (XDP) and Geneve protocol for highly scalable cloud environment. Mizar is a software defined virtual cloud networking that uses encapsulation technique to securely isolate tenants using a built-in multitenant environment. It is controlled programmatically using a set of well-defined API set. It is a simple and efficient solution that lets you create a multi-tenant overlay network of a massive number of endpoints with extensible network functions:
     <ul>
       <li>Supports provisioning and management of large number endpoints (300K hosts, 10M endpoints).</li>
       <li>Accelerates network resource provisioning for dynamic cloud environments.</li>
@@ -233,7 +236,7 @@ const FAQ_LIST = [
   {
     question: "Is Mizar Networking same as OpenStack Neutron?",
     answer: `
-    Neutron is an OpenStack project to provide "networking as a service" between interface devices (e.g., vNICs) managed by other Openstack services (e.g., nova). It is essentially a network control plane functionality that programs the underlying OVS data plane in order to enable cloud network virtualization environment. <br>
+    Neutron is an OpenStack project to provide "networking as a service" between interface devices (e.g., vNICs) managed by other Openstack services (e.g., nova). It is essentially a network control plane functionality that programs the underlying data-plane technologies (such as OVS etc.) for enabling cloud network virtualization environment. <br>
     <br>
     As an apple-to-apple comparison, Neutron is very similar to Mizar's management-plane functionality described earlier.
     `,
@@ -241,7 +244,7 @@ const FAQ_LIST = [
   {
     question: "Can Mizar co-exist with OpenStack Neutron?",
     answer: `
-    Currently, out-of-the-box Mizar management-plane is fully integrated with the Mizar data-plane/forwarding-plane functionality. However, Mizar data-plane can be easily integrated with OpenStack Neutron control plane (or for that matter, with any other network control plane) using a set of well defined published APIs provided by Mizar for translating network resource requirements to Mizar specific network configuration.
+    Currently, out-of-the-box Mizar management-plane is fully integrated with the Mizar data-plane/forwarding-plane functionality. However, Mizar data-plane can be easily integrated with OpenStack Neutron control plane (or for that matter, with any other network control plane) using a set of well-defined published APIs provided by Mizar for translating network resource requirements to Mizar specific network configuration.
     `,
   },
   {
@@ -266,7 +269,7 @@ const FAQ_LIST = [
     question:
       "Does Mizar networking Data-Plane comes bundled in with its own Control Plane?",
     answer: `
-    Yes it does. However, Mizar data-plane can be easily integrated with OpenStack Neutron control plane (or for that matter, with any other network control plane) using a set of well defined published APIs provided by Mizar for translating network resource requirements to Mizar specific network configuration.
+    Yes, it does. However, Mizar data-plane can be easily integrated with OpenStack Neutron control plane (or for that matter, with any other network control plane) using a set of well-defined published APIs provided by Mizar for translating network resource requirements to Mizar specific network configuration.
     `,
   },
   {
