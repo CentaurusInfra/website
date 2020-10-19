@@ -83,7 +83,7 @@ const FAQ_LIST = [
     amongst cloud data centers and edge cloud sites.<br>
     Additionally, it important to highlight that Centaurus employs cloud native approach along with a novel cloud networking 
     solution to provide the comprehensive cloud platform functionality. Centaurus addresses some key challenges many open 
-    source cloud infrastructure face, cloud scalability at the region level, unified infrastructure and API for 
+    source cloud infrastructure face, including cloud scalability at the region level, unified infrastructure and API for 
     VM, containers and other types of resources, and scalability of cloud network etc.<br> OpenStack does provide extensive support 
     for rich cloud Storage as well as other supporting cloud services such as Identity Management etc. As mentioned earlier 
     that we'd like to invite the open source community to join us to enhance & complete the Centaurus ecosystem by building 
