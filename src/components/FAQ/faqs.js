@@ -64,7 +64,7 @@ const FAQ_LIST = [
     provides support for deploying and managing containerized workloads but also includes inherent comprehensive 
     IaaS Provisioning & Management capabilities in a unified manner. That way, Centaurus platform is self-contained 
     and does not rely on 3rd party IaaS layer underneath it.<br> Although, it is important to highlight that Centaurus 
-    projects is highly inspired by the cloud native design principles of Kubernetes project. As a matter of fact, 
+    project is highly inspired by the cloud native design principles of Kubernetes project. As a matter of fact, 
     Centaurus/Arktos compute layer project is specifically built upon baseline Kubernetes codebase and enhances the
     underlying Kubernetes core components for enabling a highly scalable & unified cloud computing platform experience. 
     Centaurus/Mizar networking project, on the other hand,  is built from ground-up using XDP eXpress Data Path (XDP) and
@@ -161,7 +161,7 @@ const FAQ_LIST = [
     question:
       "How does Centaurus project release stays in sync with Kubernetes?",
     answer: `
-    As mentioned earlier that Centaurus projects is highly inspired by the cloud native design principles of Kubernetes project. It is built upon baseline Kubernetes codebase and enhances the underlying Kubernetes core components for enabling a highly scalable & unified cloud computing platform. Centaurus project is forked from Kubernetes release 1.15 with extensive core components changes thereafter.
+    As mentioned earlier that Centaurus project is highly inspired by the cloud native design principles of Kubernetes project. It is built upon baseline Kubernetes codebase and enhances the underlying Kubernetes core components for enabling a highly scalable & unified cloud computing platform. Centaurus project is forked from Kubernetes release 1.15 with extensive core components changes thereafter.
     <br>
     As the Centaurus codebase has diverged extensively from baseline Kubernetes, we are no longer planning to stay in sync. with the community Kubernetes version. Going forward, if there are any key changes which may benefit Centaurus project, we may cherry-pick those changes into Centaurus/Arktos codebase.`,
   },
