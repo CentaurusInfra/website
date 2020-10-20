@@ -65,9 +65,9 @@ const FAQ_LIST = [
     IaaS Provisioning & Management capabilities in a unified manner. That way, Centaurus platform is self-contained 
     and does not rely on 3rd party IaaS layer underneath it.<br> Although, it is important to highlight that Centaurus 
     project is highly inspired by the cloud native design principles of Kubernetes project. As a matter of fact, 
-    Centaurus/Arktos compute layer project is specifically built upon baseline Kubernetes codebase and enhances the
+    Centaurus/(<a target="__blank" href="https://github.com/centaurus-cloud/arktos">Arktos</a>) compute layer project is specifically built upon baseline Kubernetes codebase and enhances the
     underlying Kubernetes core components for enabling a highly scalable & unified cloud computing platform experience. 
-    Centaurus/Mizar networking project, on the other hand,  is built from ground-up using XDP eXpress Data Path (XDP) and
+    Centaurus/(<a target="__blank" href="https://github.com/centaurus-cloud/mizar">Mizar</a>) networking project, on the other hand,  is built from ground-up using XDP eXpress Data Path (XDP) and
     Geneve protocol technology-set and has no relationship to Kubernetes project whatsoever.`,
   },
   {
