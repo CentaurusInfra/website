@@ -3,11 +3,12 @@ const FAQ_LIST = [
     question: "What is Project Centaurus?",
     answer: `
     Centaurus is an open source Distributed Cloud Native Infrastructure umbrella
-    project for the 5G, AI, and Edge era. Project Centaurus is an overarching next 
-    generation open source cloud platform that encompasses open source projects 
+    project designed to meet the needs of 5G, AI, IoT and Edge era. Project Centaurus is an overarching  
+    open source cloud infrastructure platform that encompasses open source projects 
     <a target="__blank" href="https://github.com/centaurus-cloud/arktos">Arktos</a> & 
     <a target="__blank" href="https://github.com/centaurus-cloud/mizar">Mizar</a> as 
-    sub-projects underneath it as one fully integrated cloud platform.<br> Centaurus project 
+    sub-projects underneath it as one fully integrated cloud infrastructure platform. It provides an open source
+    alternative to the existing cloud infrastructure platforms available today.<br> Centaurus project 
     enables a unified and large-scale distributed cloud infrastructure platform. It is a 
     software layer that abstracts out the underlying hardware infrastructure, making it 
     possible to consistently run and manage applications running in the cloud environment 
@@ -20,7 +21,7 @@ const FAQ_LIST = [
   },
   {
     question:
-      "What is Project Centaurus trying to solve, why build a yet another cloud platform?",
+      "What is Project Centaurus trying to solve, why build a yet another cloud infrastructure platform?",
     answer: `
     With innovations in high-performance cloud network solutions, unified runtime environment, 
     and hyper-scale cluster management, Centaurus is designed to meet the infrastructure requirements 
@@ -59,7 +60,7 @@ const FAQ_LIST = [
     layers such as IaaS Provisioning & Management (using a clean “cloud provider” interface), Networking 
     (using pluggable CNI interface) etc. etc. Kubernetes typically relies on IaaS Provisioning & Management 
     provided by public cloud provides (AWS, Azure, Google etc.) or using open source OpenStack environment.<br>
-    Centaurus cloud platform, on the other hand, is a comprehensive large-scale cloud platform that not only 
+    Centaurus cloud platform, on the other hand, is a comprehensive large-scale cloud infrastructure platform that not only 
     provides support for deploying and managing containerized workloads but also includes inherent comprehensive 
     IaaS Provisioning & Management capabilities in a unified manner. That way, Centaurus platform is self-contained 
     and does not rely on 3rd party IaaS layer underneath it.<br> Although, it is important to highlight that Centaurus 
@@ -72,7 +73,7 @@ const FAQ_LIST = [
   {
     question: "How is Centaurus different from OpenStack?",
     answer: `
-    As mentioned previously that Centaurus cloud platform is a comprehensive cloud platform that not only provides 
+    As mentioned previously that Centaurus project is a comprehensive cloud infrastructure platform that not only provides 
     support for deploying and managing containerized workloads but also includes inherent comprehensive IaaS Provisioning 
     & Management capabilities. From that perspective, Centaurus is somewhat similar to what OpenStack is and provides an 
     option or an alternative to it.<br> However, it is utmost important to highlight that unlike traditional OpenStack like 
@@ -82,7 +83,7 @@ const FAQ_LIST = [
     applications environment). It has a built-in global scheduling capability that supports seamless scheduling of workloads 
     amongst cloud data centers and edge cloud sites.<br>
     Additionally, it important to highlight that Centaurus employs cloud native approach along with a novel cloud networking 
-    solution to provide the comprehensive cloud platform functionality. Centaurus addresses some key challenges many open 
+    solution to provide the comprehensive cloud infrastructure platform functionality. Centaurus addresses some key challenges many open 
     source cloud infrastructure face, including cloud scalability at the region level, unified infrastructure and API for 
     VM, containers and other types of resources, and scalability of cloud network etc.<br> OpenStack does provide extensive support 
     for rich cloud Storage as well as other supporting cloud services such as Identity Management etc. As mentioned earlier 
@@ -132,7 +133,7 @@ const FAQ_LIST = [
   },
   {
     question:
-      "Is there an easy-to-use OpenStack Horizon dashboard like web user interface for managing Compute, Networking & other services within Centaurus cloud platform?",
+      "Is there an easy-to-use OpenStack Horizon dashboard like web user interface for managing Compute, Networking & other services within Centaurus cloud infrastructure platform?",
     answer: `
     Yes, we do have a rudimentary user interface, although not extensive as OpenStack Horizon dashboard. We are hoping that community will help evolve the current user interface as we go along.
     `,
