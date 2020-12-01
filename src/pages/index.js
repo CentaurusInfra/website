@@ -307,15 +307,15 @@ const Index = () => {
             <div className="partners-container pure-u-1 pure-u-md-1-3">
               <img
                 className="partners__image "
-                src={futurewei}
-                alt="Futurewei logo"
+                src={gridgain}
+                alt="Gridgain logo"
               />
             </div>
             <div className="partners-container pure-u-1 pure-u-md-1-3">
               <img
-                className="partners__image "
-                src={gridgain}
-                alt="Gridgain logo"
+                className="partners__image"
+                src={c2c}
+                alt="Click2Cloud logo"
               />
             </div>
             <div className="partners-container pure-u-1 pure-u-md-1-3">
@@ -342,9 +342,9 @@ const Index = () => {
             </div>
             <div className="partners-container pure-u-1 pure-u-md-1-3">
               <img
-                className="partners__image"
-                src={c2c}
-                alt="Click2Cloud logo"
+                className="partners__image "
+                src={futurewei}
+                alt="Futurewei logo"
               />
             </div>
           </div>
