@@ -102,7 +102,7 @@ get going:
     keep authenticating to GitHub. You need to do this again after every reboot.
 
 Please remember read and observe the [Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md). and
-the [Contributor Guide](https://centaurusinfra.netlify.com/docs/about/contributing/) on website
+the [Contributor Guide](https://github.com/CentaurusInfra/website/blob/master/CONTRIBUTING.md) on website
 provides more detailed instructions on how to get your ideas and bug fixes seen and accepted.
 
 [centaurusinfra-website-repo]: https://github.com/CentaurusInfra/website
