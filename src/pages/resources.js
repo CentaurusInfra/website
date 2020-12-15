@@ -9,16 +9,16 @@ import config from "../../data/SiteConfig";
 
 // Modify this to add/remove categories
 const RESOURCES_CATEGORIES = [
+  "FAQs",
   "Whitepaper",
   "Presentations",
   "Talks & Videos",
   "Events",
-  "FAQs",
 ];
 
 const Resources = ({ data }) => {
   const { toggle, collapsing, toggleMenuRef, handleToggle } = useDropdown();
-  const [category, setCategory] = useState(4);
+  const [category, setCategory] = useState(0);
   const selectedCategory = RESOURCES_CATEGORIES[category];
 
   const postEdges = data.allMarkdownRemark.edges;
