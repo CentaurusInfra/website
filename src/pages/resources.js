@@ -18,7 +18,7 @@ const RESOURCES_CATEGORIES = [
 
 const Resources = ({ data }) => {
   const { toggle, collapsing, toggleMenuRef, handleToggle } = useDropdown();
-  const [category, setCategory] = useState(0);
+  const [category, setCategory] = useState(4);
   const selectedCategory = RESOURCES_CATEGORIES[category];
 
   const postEdges = data.allMarkdownRemark.edges;
