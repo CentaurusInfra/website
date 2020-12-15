@@ -170,7 +170,7 @@ const FAQ_LIST = [
     answer: `
     No, as mentioned previously that Centaurus project is forked from Kubernetes release 1.15 with extensive core components changes thereafter.
     <br>
-    As the Centaurus codebase has diverged extensively from baseline Kubernetes, we are longer planning to stay in sync. with the community Kubernetes version.
+    As the Centaurus codebase has diverged extensively from baseline Kubernetes, we are longer planning to stay in sync. with the community Kubernetes version. However, we are more than open to share ideas, lessons learned and code with the Kubernetes community.
     `,
   },
   {
