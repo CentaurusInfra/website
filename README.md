@@ -2,6 +2,8 @@
 
 Welcome to the GitHub repository for Centaurus' public website https://www.centaurusinfra.io/. This website is a general purpose project landing page and it also servers as a blog/resources hub for all project related information.
 
+test
+
 # About
 
 This project is powered by [Gatsby](https://www.gatsbyjs.com/), a React-based static website generator. This allows us to generate new content such as a blog post or resource page simply by adding markdown files to the project. The Gatsby engine will automatically generated desired pages leaving no need to touch any codebase.
