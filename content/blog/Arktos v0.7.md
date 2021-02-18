@@ -1,4 +1,8 @@
-# Arktos v0.7 is live!
+---
+title: "Arktos v0.7 is live!"
+author: "Xiaoning Ding, Deepak Vij, Mengni Zhang"
+date: "2021-02-18"
+---
 
 **Arktos** is an open source project designed for large scale cloud compute infrastructure. It is evolved from the open source project [Kubernetes](https://github.com/kubernetes/kubernetes) codebase with core design changes. 
 

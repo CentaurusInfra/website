@@ -1,4 +1,8 @@
-# Mizar v0.7 is live!
+---
+title: "Mizar v0.7 is live!"
+author: "Xiaoning Ding, Deepak Vij, Mengni Zhang"
+date: "2021-02-18"
+---
 
 **Mizar** is a large scale and high-performance cloud networking solution for running various cloud workloads such as virtual machines, containers, and other compute workloads. Compared to traditional flow-based programming models, Mizar offers flexible in-network processing that simplifies the programming of data-plane at scale. Unlike traditional networking solutions, Mizar relies on the natural partitioning of a cloud network.
 
