@@ -220,6 +220,30 @@ const Index = () => {
                       cloud.
                     </p>
                   </div>
+
+                  <div className="project">
+                    <div className="project-header">
+                      <h2 className="heading">Fornax</h2>
+                      <span className="link-wrapper">
+                        <a
+                          className="github-button"
+                          href="https://github.com/centaurusinfra/fornax"
+                          data-size="large"
+                          aria-label="Star centaurusinfra/fornax on GitHub"
+                        >
+                          Star
+                        </a>
+                      </span>
+                    </div>
+
+                    <p className="project__detail">
+                      Fornax is an autonomous, flexible, fault tolerant and 
+                      scalable edge computing framework that features hierarhical edge clusters, 
+                      easy workload and fleet management, collaborative edge application support, 
+                      multi-tenancy, and high-performance edge networking.
+                    </p>
+                  </div>
+
                 </div>
               </div>
 
