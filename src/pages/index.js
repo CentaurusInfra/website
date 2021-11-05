@@ -171,7 +171,7 @@ const Index = () => {
             </div>
 
             <div className="pure-g feature-container">
-              <div className="pure-u-1 pure-u-md-12-24 projects">
+              <div className="pure-u-1 pure-u-md-12-26 projects">
                 <div className="projects-container">
                   <div className="projects-header">
                     <h2 className="title">Centaurus Components</h2>
@@ -194,8 +194,7 @@ const Index = () => {
 
                     <p className="project__detail">
                       Arktos is a compute cluster management system designed for
-                      large scale clouds. It is evolved from Kubernetes to
-                      address key challenges of large scale clouds.
+                      large scale clouds. 
                     </p>
                   </div>
 
@@ -266,7 +265,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="pure-u-1 pure-u-md-12-24 feature-slide">
+              <div className="pure-u-1 pure-u-md-14-26 feature-slide">
                 <h1 className="feature-title" data-sal="slide-up">
                   Centaurus Features
                 </h1>
