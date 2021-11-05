@@ -237,10 +237,31 @@ const Index = () => {
                     </div>
 
                     <p className="project__detail">
-                      Fornax is an autonomous, flexible, fault tolerant and 
-                      scalable edge computing framework that features hierarhical edge clusters, 
+                      Fornax is an autonomous, flexible, fault tolerant and scalable 
+                      edge computing framework that features hierarhical edge clusters, 
                       easy workload and fleet management, collaborative edge application support, 
                       multi-tenancy, and high-performance edge networking.
+                    </p>
+                  </div>
+
+                  <div className="project">
+                    <div className="project-header">
+                      <h2 className="heading">Alnair</h2>
+                      <span className="link-wrapper">
+                        <a
+                          className="github-button"
+                          href="https://github.com/centaurusinfra/Alnair"
+                          data-size="large"
+                          aria-label="Star centaurusinfra/Alnair on GitHub"
+                        >
+                          Star
+                        </a>
+                      </span>
+                    </div>
+
+                    <p className="project__detail">
+                      Alnair is a self-learning elastic platform for AI workloads at scale, 
+                      with advanced scheduling and resource management strategy.
                     </p>
                   </div>
 
@@ -352,6 +373,39 @@ const Index = () => {
                         distributed edge networking such as VPC, subnet, service 
                         discovery, and direct edge-edge routing via XDP techology
                         with high efficiency and performance. 
+                      </p>
+                    </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">Unified Elastic Framework</h3>
+                      <p className="detail">
+                        A unified framework for elastic and non-elastic distributed 
+                        training, resource rebalance with no interruption. 
+                      </p>
+                    </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">Multifunctional Profiler</h3>
+                      <p className="detail">
+                        Provides multi-level resource utilization monitoring and 
+                        self-trigger trial job.
+                      </p>
+                    </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">AI Oriented Scheduler</h3>
+                      <p className="detail">
+                        A learning based utilization driven strategy for co-scheduling
+                        and GPU affinity awareness. 
+                      </p>
+                    </li>
+
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">GPU Sharing</h3>
+                      <p className="detail">
+                        Built-in intercept library to support fractional GPU resource
+                        allocation with reliable and QoS guaranteed.
                       </p>
                     </li>
 
