@@ -171,7 +171,7 @@ const Index = () => {
             </div>
 
             <div className="pure-g feature-container">
-              <div className="pure-u-1 pure-u-lg-12-24 projects">
+              <div className="pure-u-1 pure-u-md-1-2 projects">
                 <div className="projects-container">
                   <div className="projects-header">
                     <h2 className="title">Centaurus Components</h2>
@@ -184,7 +184,7 @@ const Index = () => {
                         <a
                           className="github-button"
                           href="https://github.com/centaurus-cloud/arktos"
-                          data-size="large"
+                          data-size="medium"
                           aria-label="Star futurewei-cloud/arktos on GitHub"
                         >
                           Star
@@ -205,7 +205,7 @@ const Index = () => {
                         <a
                           className="github-button"
                           href="https://github.com/centaurus-cloud/mizar"
-                          data-size="large"
+                          data-size="medium"
                           aria-label="Star futurewei-cloud/mizar on GitHub"
                         >
                           Star
@@ -227,7 +227,7 @@ const Index = () => {
                         <a
                           className="github-button"
                           href="https://github.com/centaurusinfra/fornax"
-                          data-size="large"
+                          data-size="medium"
                           aria-label="Star centaurusinfra/fornax on GitHub"
                         >
                           Star
@@ -248,7 +248,7 @@ const Index = () => {
                         <a
                           className="github-button"
                           href="https://github.com/centaurusinfra/Alnair"
-                          data-size="large"
+                          data-size="medium"
                           aria-label="Star centaurusinfra/Alnair on GitHub"
                         >
                           Star
@@ -265,7 +265,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="pure-u-1 pure-u-lg-12-24 feature-slide">
+              <div className="pure-u-1 pure-u-md-1-2 feature-slide">
                 <h1 className="feature-title" data-sal="slide-up">
                   Centaurus Features
                 </h1>
