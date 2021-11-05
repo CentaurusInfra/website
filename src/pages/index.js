@@ -265,8 +265,8 @@ const Index = () => {
                     </p>
                   </div>
 
-                </div>
               </div>
+            </div>
 
               <div className="pure-u-1 pure-u-md-12-24 feature-slide">
                 <h1 className="feature-title" data-sal="slide-up">
