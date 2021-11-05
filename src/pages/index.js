@@ -184,7 +184,7 @@ const Index = () => {
                         <a
                           className="github-button"
                           href="https://github.com/centaurus-cloud/arktos"
-                          data-size="medium"
+                          data-size="large"
                           aria-label="Star futurewei-cloud/arktos on GitHub"
                         >
                           Star
@@ -205,7 +205,7 @@ const Index = () => {
                         <a
                           className="github-button"
                           href="https://github.com/centaurus-cloud/mizar"
-                          data-size="medium"
+                          data-size="large"
                           aria-label="Star futurewei-cloud/mizar on GitHub"
                         >
                           Star
@@ -227,7 +227,7 @@ const Index = () => {
                         <a
                           className="github-button"
                           href="https://github.com/centaurusinfra/fornax"
-                          data-size="medium"
+                          data-size="large"
                           aria-label="Star centaurusinfra/fornax on GitHub"
                         >
                           Star
@@ -248,7 +248,7 @@ const Index = () => {
                         <a
                           className="github-button"
                           href="https://github.com/centaurusinfra/Alnair"
-                          data-size="medium"
+                          data-size="large"
                           aria-label="Star centaurusinfra/Alnair on GitHub"
                         >
                           Star
