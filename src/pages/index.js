@@ -174,7 +174,7 @@ const Index = () => {
               <div className="pure-u-1 pure-u-md-1-2 projects">
                 <div className="projects-container">
                   <div className="projects-header">
-                    <h2 className="title">Centaurus Components</h2>
+                    <h2 className="title">Centaurus Technologies</h2>
                   </div>
 
                   <div className="project">
