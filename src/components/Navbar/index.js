@@ -77,6 +77,8 @@ const Navbar = () => {
                 rel="noreferrer"
               >
                 Alnair
+              </a>
+            </li>
 
             <li className="dropdown-item">
               <a
@@ -86,9 +88,9 @@ const Navbar = () => {
                 rel="noreferrer"
               >
                 Global Scheduler
-
               </a>
             </li>
+
           </ul>
         </li>
 
@@ -151,6 +153,7 @@ const Navbar = () => {
                 Global Scheduler
               </a>
             </li>
+
           </ul>
         </li>
 
