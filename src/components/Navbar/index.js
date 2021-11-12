@@ -30,7 +30,7 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        
+
         <li className="nav-item nav-item--has-dropdown">
           <span className="nav-link dropdown-toggle" to="/">
             Projects
@@ -89,7 +89,8 @@ const Navbar = () => {
 
               </a>
             </li>
-
+          </ul>
+        </li>
 
         <li className="nav-item nav-item--has-dropdown">
           <span className="nav-link dropdown-toggle" to="/">
