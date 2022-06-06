@@ -146,13 +146,11 @@ const Index = () => {
             </div>
 
             <div className="overview-container container pure-g">
-              <div className="overview-image-wrapper pure-u-1 pure-u-md-1-2">
-                <img
-                  className="overview-image"
-                  src={overview}
-                  alt="Centaurus Overview"
-                />
-              </div>
+              <img
+                className="overview-image"
+                src={overview}
+                alt="Centaurus Overview"
+              />
             </div>
 
             <div className="pure-g feature-container">
