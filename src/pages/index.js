@@ -154,22 +154,6 @@ const Index = () => {
                 />
               </div>
 
-              <div className="overview-text-wrapper pure-u-1 pure-u-md-1-2">
-                <p className="overview-text">
-                  Centaurus open source project is a cloud infrastructure
-                  platform that can be used to build your public or private
-                  cloud. It unifies the orchestration, network provisioning and
-                  management of cloud compute and network resources at regional
-                  scale. It offers the same API experience to provision and
-                  manage virtual machines, containers, serverless and other
-                  types of cloud resources. Centaurus combines traditional IaaS
-                  and PaaS layer into one infrastructure platform that can
-                  simplify your cloud management and reduce your management
-                  cost.
-                </p>
-              </div>
-            </div>
-
             <div className="pure-g feature-container">
               <div className="pure-u-1 pure-u-md-1-2 projects">
                 <div className="projects-container">
