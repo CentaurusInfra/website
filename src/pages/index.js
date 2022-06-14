@@ -117,7 +117,7 @@ const Index = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/3sX_ZCadIas"
+              src="https://www.youtube.com/embed/f72wBxwe7w0"
               frameBorder="0"
               title="Centaurus Overview"
               className="pure-u-1 pure-u-md-12-24"
@@ -146,11 +146,27 @@ const Index = () => {
             </div>
 
             <div className="overview-container container pure-g">
-              <img
-                className="overview-image"
-                src={overview}
-                alt="Centaurus Overview"
-              />
+              <div className="overview-image-wrapper pure-u-1 pure-u-md-1-2">
+                <img
+                  className="overview-image"
+                  src={overview}
+                  alt="Centaurus Overview"
+                />
+              </div>
+
+              <div className="overview-text-wrapper pure-u-1 pure-u-md-1-2">
+                <p className="overview-text">
+                  Centaurus is an open source platform for building a scalable distributed
+                  cloud infrastructure that unifies the orchestration and management of VM,
+                  Container and Serverless workloads. As a cluster management platform,
+                  Centaurus provisions and manages the compute and network resources across 
+                  cloud data centers and edge sites at scale. Centaurus is also a self-learning
+                  elastic platform for AI workloads with optimized GPU sharing and scheduling
+                  algorithms. Centaurus aims to be the next generation cloud infrastructure that
+                  can simplify your cloud management and reduce your management cost in the age
+                  of Edge, AI, and 5G. 
+                </p>
+              </div>
             </div>
 
             <div className="pure-g feature-container">
