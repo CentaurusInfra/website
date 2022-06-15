@@ -140,8 +140,8 @@ const Index = () => {
                 Build your next infrastructure with Centaurus
               </h1>
               <p className="subtitle" data-sal="slide-up">
-                Next generation cloud platform with better resource utilization
-                and reduced management overheads
+                Next generation infrastructure platform for large scale cloud
+                as well as for AI and Edge computing
               </p>
             </div>
 
