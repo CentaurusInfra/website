@@ -115,13 +115,7 @@ const Index = () => {
         <section className="branding">
           <div className="branding-container container pure-g">
             <iframe
-              width="640"
-              height="385"
-              src="https://www.youtube.com/embed/4bnwRruvpOM"
-              frameBorder="0"
-              title="Centaurus Overview"
-              className="pure-u-1 pure-u-md-12-24"
-            />
+              <iframe src="https://www.youtube.com/embed/4bnwRruvpOM?vq=hd1080&rel=0" width="560" height="315" title="Centaurus Infrastructure" frameborder="0" allowfullscreen></iframe>
             <div
               className="branding-text-container pure-u-1 pure-u-md-12-24"
               data-sal="slide-up"
@@ -147,7 +141,7 @@ const Index = () => {
 
             <div className="overview-container container pure-g">
               <div className="overview-image-wrapper pure-u-1 pure-u-md-1-2">
-              <iframe src="https://www.youtube.com/embed/4bnwRruvpOM?vq=hd1080&rel=0" width="560" height="315" title="Centaurus Infrastructure" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/f72wBxwe7w0?vq=hd1080&rel=0" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
               </div>
 
               <div className="overview-text-wrapper pure-u-1 pure-u-md-1-2">
