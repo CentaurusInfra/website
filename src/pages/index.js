@@ -114,7 +114,6 @@ const Index = () => {
         </section>
         <section className="branding">
           <div className="branding-container container pure-g">
-            <iframe
               <iframe src="https://www.youtube.com/embed/4bnwRruvpOM?vq=hd1080&rel=0" width="560" height="315" title="Centaurus Infrastructure" frameborder="0" allowfullscreen></iframe>
             <div
               className="branding-text-container pure-u-1 pure-u-md-12-24"
