@@ -117,7 +117,7 @@ const Index = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/f72wBxwe7w0"
+              src="https://www.youtube.com/embed/4bnwRruvpOM"
               frameBorder="0"
               title="Centaurus Overview"
               className="pure-u-1 pure-u-md-12-24"
@@ -147,10 +147,13 @@ const Index = () => {
 
             <div className="overview-container container pure-g">
               <div className="overview-image-wrapper pure-u-1 pure-u-md-1-2">
-                <img
-                  className="overview-image"
-                  src={overview}
-                  alt="Centaurus Overview"
+                <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/f72wBxwe7w0"
+                frameBorder="0"
+                title="Centaurus Tutorial"
+                className="pure-u-1 pure-u-md-12-24"
                 />
               </div>
 
