@@ -39,7 +39,7 @@ const Blog = ({ data }) => {
               </a>
               <a
                 className="link"
-                href="centaurusinfra@googlegroups.com "
+                href="[mailto:centaurusinfra@googlegroups.com%20%0d]centaurusinfra@googlegroups.com"
               >
                 Email Group
               </a>
