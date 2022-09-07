@@ -24,51 +24,24 @@ const Blog = ({ data }) => {
           <h4 className="blog-side-menu__heading">Join our community</h4>
           <div className="projects">
             <div className="arktos">
-              <h5 className="heading">Arktos</h5>
+              <h5 className="heading">Centaurus</h5>
               <a
                 className="link"
-                href="https://github.com/centaurus-cloud/arktos"
+                href="https://github.com/centaurusinfra"
               >
                 Github
               </a>
               <a
                 className="link"
-                href="https://join.slack.com/t/arktosworkspace/shared_invite/zt-cmak5gjq-rBxX4vX2TGMyNeU~jzAMLQ"
+                href="https://github.com/CentaurusInfra/arktos/discussions"
               >
-                Slack Channel
+                Centaurus Community
               </a>
               <a
                 className="link"
-                href="https://groups.google.com/forum/#!forum/arktos-user"
+                href="centaurusinfra@googlegroups.com "
               >
                 Email Group
-              </a>
-            </div>
-            <div className="mizar">
-              <h5 className="heading">Mizar</h5>
-              <a
-                className="link"
-                href="https://github.com/centaurus-cloud/mizar"
-              >
-                Github
-              </a>
-              <a
-                className="link"
-                href="https://join.slack.com/t/mizar-group/shared_invite/zt-9md5gw7m-Fp8n1iV9H04Nn8P3lwTEMA"
-              >
-                Slack Channel
-              </a>
-              <a
-                className="link"
-                href="https://groups.google.com/forum/#!forum/mizar-cloud-networking"
-              >
-                Email Group
-              </a>
-              <a
-                className="link"
-                href="https://www.youtube.com/playlist?list=PL_7gYB_Le9d31Bpd3ZfyNE-c3AY-fYYw1"
-              >
-                Community Meetings
               </a>
             </div>
           </div>
