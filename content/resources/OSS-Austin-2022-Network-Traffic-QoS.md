@@ -6,4 +6,4 @@ author: "Vinay Kulkarni & Phu Tran"
 thumbnail: "../../src/images/thumbnails/Network-Traffic-QoS.png"
 ---
 
-<iframe  width="560" height="315" src="https://www.youtube.com/watch?v=3pmNnvw5sDs" frameborder="0"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3pmNnvw5sDs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
