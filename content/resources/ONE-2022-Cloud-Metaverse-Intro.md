@@ -7,4 +7,4 @@ thumbnail: "../../src/images/thumbnails/metaverse-intro.png"
 ---
 
 
-<iframe src="https://player.vimeo.com/video/773978115" width="560px" height="315px" frameborder="0"></iframe>
+<iframe  width="560" height="315" src="https://player.vimeo.com/video/773978115" frameborder="0"></iframe>
