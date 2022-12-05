@@ -2,6 +2,7 @@
 title: "Cloud and Metaverse - Introduction"
 date: "2022-11-16"
 author: "Anni Lai"
+category: "talks & videos"
 thumbnail: "../../src/images/thumbnails/metaverse-intro.png"
 ---
 
