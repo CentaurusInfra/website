@@ -21,28 +21,16 @@ The metaverse is believed to be the next evolutionary digital platform that offe
 
 **Metaverse Introduction - Anni Lai** 
 
-<iframe  width="560" height="315" src="https://player.vimeo.com/video/773978115?h=a1921faca1" frameborder="0"></iframe>
-
-
 **The State of the Metaverse Open Source and Standard Activities - Wenjing Chu**
 
 * Wenjing gave an overview of the current state of various metaverse development efforts and ecosystem in the open source and standard arena. 
-
-<iframe  width="560" height="315" src="https://player.vimeo.com/video/773978142?h=d8d1c18ea2" frameborder="0"></iframe>
-
 
 **Cloud Opportunities Brought by the Metaverse - Anni Lai** 
 
 * Anni then shared on how the metaverse will impact cloud computing and the challenges the cloud service providers will face when trying to capture the opportunities presented by the metaverse, whether it's Metaverse-as-a-Service, Metaverse Purposed Cloud, or Metaverse enabled by Hybrid Cloud, etc. 
 
-<iframe  width="560" height="315" src="https://player.vimeo.com/video/773978223?h=0baa4ebd99" frameborder="0"></iframe>
-
-
 **Centaurus, the Cloud Platform Ready for the Metaverse - Mengni Zhang** 
 * Mengni concluded the talk portions of the event by intoducing the LF Centaurus Open Source project, which is designed to provide large scalablity, high performance, low latency distributed cloud architecture with edge and AI support. 
-
-<iframe  width="560" height="315" src="https://player.vimeo.com/video/773978246?h=7922ddb911" frameborder="0"></iframe>
-
 
 
 **Panel Discussion**
@@ -51,9 +39,6 @@ The metaverse is believed to be the next evolutionary digital platform that offe
 * We concluded the event with a panel discussion with experts from the Edge, Networking, Cloud Computing areas.
     * Moderator: Anni Lai, (LF Edge TAC member, Futurewei)
     * Panelists: Tina Tsou (LF Edge Board Chair, ARM), Ranny Haiby (CTO, LF Edge, & LF Network), Dr. Ying Xiong (Advisor, LF Centaurus project, Futurewei), Deepak Vij (TSC Chair, LF Centaurus project, Futurewei), Wenjing Chu (LF Edge Board member, Futurewei)
-
-
-<iframe  width="560" height="315" src="https://player.vimeo.com/video/773978284?h=073b0de27e" frameborder="0"></iframe>
 
 ### Events Insights
 We had over 130 people signed up for the co-located event. The event also offered livestream for folks who were not able to join us in person at the conference. We had a great time sharing our current and future planning with the community. Thank you all again for joining us. 

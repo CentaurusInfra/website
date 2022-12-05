@@ -6,5 +6,4 @@ author: "Anni Lai"
 thumbnail: "../../src/images/thumbnails/metaverse-intro.png"
 ---
 
-
-<iframe  width="560" height="315" src="https://player.vimeo.com/video/773978115?h=a1921faca1" frameborder="0"></iframe>
+<iframe src="https://player.vimeo.com/video/773978115?h=a1921faca1&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
