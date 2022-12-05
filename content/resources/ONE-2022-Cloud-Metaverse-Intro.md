@@ -6,4 +6,5 @@ category: "talks & videos"
 thumbnail: "../../src/images/thumbnails/metaverse-intro.png"
 ---
 
-<iframe width="560" height="315" src="https://player.vimeo.com/video/773978115?h=a1921faca1&title=0&byline=0&portrait=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe  width="560" height="315" src="https://player.vimeo.com/video/773978115?h=a1921faca1&title=0&byline=0&portrait=0" frameborder="0"></iframe>
